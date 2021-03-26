@@ -468,7 +468,7 @@ img {
 	border-radius: 30px;
 }
 
-.main-footer__link:hover:not(.main-header__link--active) {
+.main-footer__link:hover:not(.main-footer__link--active) {
 	color: #1B58B1;
 }
 
