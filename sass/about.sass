@@ -1,0 +1,95 @@
+@import 'responsive'
+
+.about
+	margin-bottom: 122px
+	+media(mdx)
+		margin-bottom: 60px
+	+media(sm)
+		margin-bottom: 40px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		+media(mdx)
+			flex-direction: column
+
+	&__item
+		width: 50%
+		+media(mdx)
+			width: 100%
+			margin: 0px
+			display: contents
+		&--content
+			padding-top: 75px
+			padding-right: 10px
+
+		&--pic
+			position: relative
+
+	&__elem
+		position: relative
+		font-size: 24px
+		line-height: 1.2
+		color: #333333
+		text-transform: uppercase
+		padding-left: 218px
+		margin-bottom: 25px
+		font-weight: 300
+		+media(md)
+			padding-left: 120px
+		&:after
+			position: absolute
+			content: ' '
+			top: 50%
+			left: 0px
+			transform: translateY(-50%)
+			width: 200px
+			height: 1px
+			background-color: #333
+			+media(md)
+				width: 100px	
+
+	&__text
+		padding-bottom: 36px
+		p
+			font-size: 18px
+			line-height: 1.7
+			color: #000000
+
+	&__inner
+		display: flex
+		align-items: flex-start
+		padding-bottom: 10px
+		+media(xs)
+			flex-direction: column
+
+	&__block
+		display: flex
+		align-items: center
+		+media(mdx)
+			order: 2
+
+	&__logo
+		max-width: 220px
+		width: 100%
+		margin-right: 58px
+		+media(xs)
+			margin: 0 auto
+
+	&__decor
+		+media(xs)
+			display: none
+
+	&__image
+		padding-left: 35px
+		+media(mdx)
+			margin-top: -10px
+		img
+			display: block
+
+	&__card
+		position: absolute
+		left: -80px
+		bottom: -205px
+		+media(mdx)
+			display: none

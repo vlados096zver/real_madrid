@@ -1,0 +1,152 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+	color: #333333
+	background-color: #fff
+	font-size: 16px
+	line-height: 1.2
+	font-weight: normal
+	font-style: normal
+	font-family: "roboto"
+	box-sizing: border-box
+
+*
+	box-sizing: border-box
+
+*::after,
+*::before
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+
+.svg
+	&-about
+		display: none
+
+.container
+	max-width: 1220px
+	width: 100%
+	margin: 0 auto
+	padding: 0 10px
+	&--inner
+		max-width: 1940px
+		padding: 0px
+
+	&--contacts
+		max-width: 620px
+
+
+.input
+	display: block
+	width: 100%
+	border: none
+	background-color: #f2f2f2
+	border-radius: 20px
+	padding: 15px
+	padding-bottom: 16px
+	&--area
+		min-height: 200px
+		resize: none
+
+	&.form-fail
+		border-color: #b00
+
+	&.form-done
+		border-color: #90ee90
+
+.subtitle
+	position: relative
+	font-size: 24px
+	line-height: 1.2
+	color: #333333
+	text-transform: uppercase
+	padding-left: 218px
+	margin-bottom: 25px
+	font-weight: 300
+	+media(md)
+		padding-left: 120px
+	+media(xs)
+		font-size: 21px
+		padding-left: 100px
+	&:after
+		position: absolute
+		content: ' '
+		top: 50%
+		left: 0px
+		transform: translateY(-50%)
+		width: 200px
+		height: 1px
+		background-color: #333
+		+media(md)
+			width: 100px	
+		+media(xs)
+			width: 80px
+
+.title
+	font-size: 64px
+	line-height: 1.2
+	color: #1b58b1
+	text-transform: uppercase
+	padding-top: 15px
+	padding-bottom: 40px
+	font-weight: 900
+	+media(mdx)
+		font-size: 42px
+	+media(sm)
+		font-size: 35px
+
+.btn
+	display: block
+	width: 100%
+	max-width: 240px
+	cursor: pointer
+	font: inherit
+	font-size: 18px
+	line-height: 1.2
+	border: none
+	outline: none
+	text-align: center
+	text-transform: uppercase
+	background-color: #fff
+	padding: 12px 5px
+	padding-bottom: 13px
+	border-radius: 20px
+	border: 2px solid #1B58B1
+	margin-bottom: 20px
+	font-weight: 900
+	transition: 0.3s background-color, 0.3s color, 0.3s border
+	&--write
+		color: #fff
+		background-color: #1B58B1
+		margin-right: 35px
+		&:hover
+			background-color: #0d2c59
+			border-color: #0d2c59
+
+	&--services
+		color: #1B58B1
+		background-color: #fff
+		&:hover
+			background-color: #1B58B1
+			color: #fff
+
+	&--send
+		max-width: 250px
+		color: #fff
+		background-color: #1B58B1
+		margin-bottom: 0px
+
+		&[disabled]
+			cursor: default
+			opacity: 0.5
+			text-decoration: line-through
+
+		&:not(:disabled)
+				&:hover
+					background-color: #0d2c59
+					border-color: #0d2c59

@@ -1,0 +1,117 @@
+@import 'responsive'
+
+.services
+	margin-bottom: 120px
+	+media(lgxs)	
+		margin-bottom: 60px
+
+	&__title
+		font-size: 64px
+		line-height: 1.2
+		color: #1B58B1
+		text-transform: uppercase
+		padding-bottom: 20px
+		font-weight: 200
+		+media(md)
+			font-size: 45px
+
+	&__subtitle
+		font-size: 36px
+		line-height: 1.2	
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 30px
+		font-weight: normal
+		+media(md)
+			font-size: 28px
+
+	&__block
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 420px
+		background-color: rgba(27, 88, 177, 0.05)
+		border-radius: 90px
+		+media(lgxs)
+			max-width: 350px
+			margin: 0 auto
+			height: 300px
+			border-radius: 50px
+
+	&__file
+		position: relative
+		z-index: 4
+		display: block
+		width: 200px
+		height: 200px
+		background-color: #1B58B1
+		border-radius: 40px
+
+	&__elem
+		font-size: 72px
+		line-height: 1
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding-top: 50px
+		padding-bottom: 5px
+		font-weight: 200
+
+	&__download	
+		font-size: 18px
+		line-height: 1.2
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		font-weight: 900
+
+	&__decor-left,
+	&__decor-right
+		position: absolute
+		content: ' '
+		width: 700px
+		height: 300px
+		background-color: rgba(27, 88, 177, 0.05)
+		border-radius: 40px
+		+media(lgxs)
+			display: none
+
+	&__decor-left	
+		&:after
+			position: absolute
+			content: ' '
+			top: calc(50% - 1px)
+			width: 300px
+			height: 2px
+			background-color: rgba(27, 88, 177, 0.5)
+			left: 60px
+			+media(lgs)
+				left: 30px
+				width: 280px
+
+	&__decor-right
+		&:before
+			z-index: 3
+			position: absolute
+			content: ' '
+			top: calc(50% - 1px)
+			width: 300px
+			height: 2px
+			background-color: rgba(27, 88, 177, 0.5)
+			right: 60px
+			+media(lgs)
+				right: 30px
+				width: 280px
+
+	&__decor-left,
+		top: 35px
+		left: 45px
+		+media(lgs)
+			left: 30px
+
+	&__decor-right
+		top: 80px
+		right: 45px
+		+media(lgs)
+			right: 30px

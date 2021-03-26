@@ -1,0 +1,102 @@
+@import 'responsive'
+
+.main-footer
+	&__wrap
+		position: relative
+		display: flex
+		align-items: center
+		margin-bottom: 40px
+		+media(lgxs)
+			flex-direction: column
+		+media(md)
+			justify-content: space-between
+			margin-bottom: 15px
+
+	&__logo
+		display: block
+		max-width: 250px
+		width: 100%
+		font-size: 48px
+		color: #1B58B1
+		text-transform: uppercase
+		font-weight: 200
+		margin-right: auto
+		+media(lgs)
+			max-width: 200px
+			font-size: 37px
+		+media(lgxs)
+			margin: 0 auto
+			margin-bottom: 35px
+
+	&__list
+		display: flex
+		+media(md)
+			flex-direction: column
+			align-items: center
+		li:not(:last-child)
+			margin-right: 20px
+			+media(md)
+				margin-right: 0px
+
+	&__link
+		position: relative
+		display: inline-block
+		font-size: 16px
+		line-height: 1.2
+		color: #000
+		text-transform: uppercase
+		font-weight: 400
+		transition: 0.3s color
+		+media(md)
+			margin-bottom: 20px
+		&--active
+			&:after
+				position: absolute
+				content: ' '
+				top: -15px
+				left: calc(50% - 10px)
+				width: 20px
+				height: 7px
+				background-color: #1B58B1
+				border-radius: 30px
+				+media(md)
+					width: 100%
+					left: 0px
+					bottom: -10px
+					top: initial
+					height: 4px
+
+		&:hover:not(.main-header__link--active)
+			color: #1B58B1
+
+	&__desc
+		padding-bottom: 45px
+		+media(md)
+			padding-bottom: 30px
+		p
+			font-size: 14px
+			line-height: 1.2
+			text-align: center
+			color: #1B58B1
+			text-transform: uppercase
+
+.msg-modal
+	position: fixed
+	top: 30%
+	left: calc(50% - 150px)
+	width: 300px
+	padding: 20px 30px
+	border-radius: 15px
+	text-align: center
+	background-color: #1B58B1
+	color: #fff
+	opacity: 0
+	visibility: hidden
+	font-size: 18px
+	line-height: 1.5
+	border-radius: 5px
+	z-index: 20
+	transition: 0.3s visibility, 0.3s opacity
+	&-active
+		opacity: 1
+		visibility: visible

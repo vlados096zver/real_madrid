@@ -1,0 +1,138 @@
+@import 'responsive'
+
+.contacts
+	margin-bottom: 70px
+	+media(md)
+		margin-bottom: 50px
+		
+	&__title
+		font-size: 48px
+		line-height: 1.2
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 32px
+		font-weight: 200
+		+media(md)
+			font-size: 35px
+
+	&__item
+		margin-bottom: 30px
+		&--block
+			margin-bottom: 55px
+
+	&__inner
+		display: flex
+		justify-content: space-between
+
+	&__label
+		user-select: none
+		cursor: pointer
+		display: inline-block
+		font-size: 18px
+		line-height: 1.2
+		color: #000
+		text-transform: uppercase
+		margin-left: 10px
+		margin-bottom: 16px
+
+	&__info
+		font-size: 18px
+		line-height: 1.2
+		color: #808080
+		margin-bottom: 16px
+
+	&__row
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 70px
+		+media(md)
+			margin-bottom: 45px
+
+	&__desc
+		user-select: none
+		font-size: 18px
+		line-height: 1.2
+		color: #1B58B1
+		text-transform: uppercase
+		text-align: center
+		font-weight: 300
+		margin-right: 35px
+
+	&__wrap-error
+		margin-bottom: 5px
+
+	&__fail
+		color: #8B0000
+		text-transform: uppercase
+		padding-left: 10px
+		padding-bottom: 15px
+		font-weight: 700
+
+	&__elem
+		position: relative
+		padding-top: 58px
+		padding-bottom: 45px
+		+media(md)
+			padding-top: 40px
+			padding-bottom: 25px
+		&:after,
+		&:before
+			position: absolute
+			content: ' '
+			width: 300px
+			height: 2px
+			left: 50%
+			transform: translateX(-50%)
+			background: rgba(51, 51, 51, 0.5)
+
+		&:after
+			top: 0px
+
+		&:before
+			bottom: 0px
+
+	&__holder
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		padding-bottom: 20px
+		margin: 0 -23px
+		+media(md)
+			flex-direction: column
+			margin: 0px
+			padding-bottom: 10px
+
+	&__tel
+		font-size: 48px
+		color: #1B58B1
+		margin: 0 23px
+		margin-bottom: 30px
+		font-weight: 200
+		+media(md)
+			font-size: 35px
+		+media(sm)
+			font-size: 27px
+			margin-bottom: 20px
+
+	&__email
+		font-size: 24px
+		line-height: 1.2
+		color: #1B58B1
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		font-weight: 300
+		+media(md)
+			font-size: 22px
+
+	&__address
+		font-size: 18px
+		line-height: 1.2
+		text-transform: uppercase
+		text-align: center
+		color: #000000
+		margin-bottom: 20px
+		+media(md)
+			font-size: 17px
