@@ -934,10 +934,21 @@ img {
 
 .doc__icons {
 	display: flex;
+	align-items: center;
 	padding-bottom: 13px;
 }
 
+.doc__box {
+	display: block;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #1B58B1;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
 .doc__box svg {
+	display: block;
 	width: 30px;
 	height: 30px;
 	fill: #1B58B1;
@@ -953,12 +964,23 @@ img {
 }
 
 .founder__logo {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .founder__logo img {
 	display: block;
 	margin: 0 auto;
+}
+
+.founder__row {
+	position: relative;
+}
+
+.founder__man {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -30px;
 }
 
 .founder .content__text p {
